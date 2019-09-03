@@ -1,0 +1,34 @@
+1. Requirements / Assumptions used:
+The program asks for 3 inputs: input file name (input.txt), two integers (inches) specifying the left and right margins.
+For margins, 1 inch = 72 points
+Assuming 12 point font used, 1 inch = (72/12) characters = 6 characters
+Inputs in inches are accepted as float values. 
+As character width, the specified margin values are converted to integers for simplicity of use.
+Minimum margin value to be accepted is 1 character wide.
+The maximum input line is 80 characters long. Sum of left and right margin values should less than 80 charater wide.
+Includes as many words as can “fit” between the margins.
+Leaves 1 blank between words, and 2 blanks between sentences in the output.
+A row of numbers upto 80 is printed on top to observe margin manipulation.
+
+The program processes the text file and produce as output
+a) a displayed listing of the edited text
+b) the produced file saved in the directory (/Prog1/DAT1.TXT).
+
+2. Algorithm (pseudo code):
+Step 1: Take inputs: file name, left and right margins.
+Step 2: Convertion of values of margins from inches to characters.
+Step 3: Print a row of numbers upto 80 on top.
+Step 4: Print whitespaces along the left margin & increment character counts.
+Step 5: Include as many words as can “fit” between the margins & increment character counts.
+Step 6: Print whitespaces along the right margin & increment character counts.
+Step 7: Start new line after 80 characters max.
+
+
+3. Source code: marginProgram.py
+The users have to run the program typing: python3 marginProgram.py
+
+4. Test cases used with results:
+a) Negative input margins.
+b) Sum of Margin values greater than 80.
+c) Trailing blanks after words in input text file.
+d) Multiple lines and paragraphs.
