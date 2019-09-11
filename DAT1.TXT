@@ -1,6 +1,0 @@
-01234567890123456789012345678901234567890123456789012345678901234567890123456789
-   Computers are widely used to help produce written documents.  One 
-   desirable capability of a word processing system is margin manipulation.  
-   This enables text to be formatted with a left and right margin selected 
-   by a user.  The word processing program allocates words to lines in order 
-   to satisfy the margin requirements.  

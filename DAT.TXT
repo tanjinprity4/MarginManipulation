@@ -12,7 +12,7 @@ A row of numbers upto 80 is printed on top to observe margin manipulation.
 
 The program processes the text file and produce as output
 a) a displayed listing of the edited text
-b) the produced file saved in the directory (/Prog1/DAT1.TXT).
+b) the produced file saved in the directory (/Prog1/output.txt).
 
 2. Algorithm (pseudo code):
 Step 1: Take inputs: file name, left and right margins.
@@ -24,8 +24,9 @@ Step 6: Print whitespaces along the right margin & increment character counts.
 Step 7: Start new line after 80 characters max.
 
 
-3. Source code: marginProgram.py
-The users have to run the program typing: python3 marginProgram.py
+3. Source code avaliable in: marginProgram.py
+The users have to run the program using the following command: python3 marginProgram.py input.txt
+marginProgram.py takes the file name (input.txt) as an argument.
 
 4. Test cases used with results:
 a) Negative input margins.

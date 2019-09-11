@@ -1,14 +1,13 @@
-def margin(leftMargin,rightMargin,contents):
-  # Output file to save contents with specified margin.
-  outFile = open("DAT1.TXT", "w")
-  
+import sys
+
+def margin(leftMargin,rightMargin,contents, outFile):
   # Print a row of numbers upto 80 on top to observe margin manipulation.
   for i in range(8):
     for j in range(10):
       print (j, end = '')
       outFile.write(str(j))
   print()
-  outFile.write("\n")
+  outFile.write('\n')
   
   # Print & save input contents with specified margin. 
   totalChar = 80
@@ -48,33 +47,46 @@ def margin(leftMargin,rightMargin,contents):
         outFile.write('\n')
         charCount = 0
   print()
-  outFile.write('\n')
-  outFile.close()
+  outFile.write('\n\n\n')
 
 def main():
   # Open and read input file.
-  path = input("Enter the name of input file: ")
+  path = sys.argv[1]
   inFile = open(path, "r")
   if inFile.mode == 'r':
     contents =inFile.read()
+
+  # Output file to save contents with specified margin.
+  outFile = open("output.txt", "a+")
+  outFile.write('Starting Program.\n')
   
   # Initialize margins.
   leftMargin = 80
   rightMargin = 80
   while (leftMargin + rightMargin > 80):
-    print("The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.")
-    leftInches = float(input("Enter positive left margin in inches: "))
-    rightInches = float(input("Enter positive right margin in inches: "))
+    print('The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.')
+    outFile.write('The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.\n')
+    leftInches = float(input('Enter positive left margin in inches: '))
+    outFile.write('Enter positive left margin in inches: ' + str(leftInches) + '\n')
+    rightInches = float(input('Enter positive right margin in inches: '))
+    outFile.write('Enter positive right margin in inches: ' + str(rightInches) + '\n')
+    
+    # If any margin is negative, ask user to enter margins again.
+    if (leftInches < 0) or (rightInches < 0):
+      print('Margin can not be negative.')
+      outFile.write('Margin can not be negative.\n')
+      continue
     
     # 1 inch = 72 points = 6 characters (in 12 pt font).
     leftMargin = int(leftInches * 6)
+    print('Left margin is ' + str(leftMargin) + ' characters long.')
+    outFile.write('Left margin is ' + str(leftMargin) + ' characters long.\n')
     rightMargin = int(rightInches * 6)
-    
-    # If any margin is less than 1 (zero or negative), ask user to enter margins again.
-    if (leftMargin < 1) or (rightMargin < 1):
-      continue
+    print('Right margin is ' + str(rightMargin) + ' characters long.')
+    outFile.write('Right margin is ' + str(rightMargin) + ' characters long.\n')
   
-  margin(leftMargin, rightMargin, contents)
+  margin(leftMargin, rightMargin, contents, outFile)
   inFile.close()
+  outFile.close()
   
 main()

@@ -1,0 +1,95 @@
+Starting Program.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: 1.0
+Enter positive right margin in inches: 1.0
+Left margin is 6 characters long.
+Right margin is 6 characters long.
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+      Computers are widely used to help produce written documents.  One 
+      desirable capability of a word processing system is margin 
+      manipulation.  This enables text to be formatted with a left and 
+      right margin selected by a user.  The word processing program 
+      allocates words to lines in order to satisfy the margin 
+      requirements.  
+
+
+Starting Program.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: -1.0
+Enter positive right margin in inches: -2.0
+Margin can not be negative.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: -1.0
+Enter positive right margin in inches: 2.0
+Margin can not be negative.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: 2.0
+Enter positive right margin in inches: -1.0
+Margin can not be negative.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: 3.0
+Enter positive right margin in inches: 1.0
+Left margin is 18 characters long.
+Right margin is 6 characters long.
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+                  Computers are widely used to help produce written 
+                  documents.  One desirable capability of a word 
+                  processing system is margin manipulation.  This enables 
+                  text to be formatted with a left and right margin 
+                  selected by a user.  The word processing program 
+                  allocates words to lines in order to satisfy the margin       
+                  requirements.  
+
+
+Starting Program.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: 7.0
+Enter positive right margin in inches: 8.0
+Left margin is 42 characters long.
+Right margin is 48 characters long.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: 2.0
+Enter positive right margin in inches: 5.0
+Left margin is 12 characters long.
+Right margin is 30 characters long.
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+            Computers are widely used to help 
+            produce written documents.  One 
+            desirable capability of a word 
+            processing system is margin 
+            manipulation.  This enables text to be                               
+            formatted with a left and right 
+            margin selected by a user.  The word 
+            processing program allocates words to                               
+            lines in order to satisfy the margin 
+            requirements.  
+
+
+Starting Program.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: 0.0
+Enter positive right margin in inches: 0.0
+Left margin is 0 characters long.
+Right margin is 0 characters long.
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+Computers are widely used to help produce written documents.  One desirable 
+capability of a word processing system is margin manipulation.  This enables 
+text to be formatted with a left and right margin selected by a user.  The word 
+processing program allocates words to lines in order to satisfy the margin 
+requirements.  
+
+
+Starting Program.
+The maximum input line is 80 characters long. Keep sum of left and right margin less than 80.
+Enter positive left margin in inches: 0.1
+Enter positive right margin in inches: 0.5
+Left margin is 0 characters long.
+Right margin is 3 characters long.
+01234567890123456789012345678901234567890123456789012345678901234567890123456789
+Computers are widely used to help produce written documents.  One desirable 
+capability of a word processing system is margin manipulation.  This enables 
+text to be formatted with a left and right margin selected by a user.  The 
+word processing program allocates words to lines in order to satisfy the 
+margin requirements.  
+
+
